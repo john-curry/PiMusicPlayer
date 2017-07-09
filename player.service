@@ -1,0 +1,11 @@
+[Unit]
+Description=Starts Mp3Player
+DefaultDependencies=false            
+
+[Service]
+Type=simple
+ExecStart=/home/bigboss/src/mp3player/mp3player.py
+WorkingDirectory=/var/music
+
+[Install]
+WantedBy=local-fs.target
